@@ -1,6 +1,6 @@
 import streamlit as st
 import numpy as np
-
+import matplotlib.pyplot as plt
 from pathlib import Path
 
 # Configuração da página
@@ -14,7 +14,7 @@ st.set_page_config(
 PASTA_APP = Path(__file__).parent
 
 # Caminho da imagem
-CAMINHO_LOGO = PASTA_APP / "mate.jpeg.jpeg"
+CAMINHO_LOGO = PASTA_APP / "mat.jpeg"
 
 # Exibe a imagem, se existir
 if CAMINHO_LOGO.exists():
@@ -26,7 +26,7 @@ if CAMINHO_LOGO.exists():
             use_container_width=True
         )
 else:
-    st.warning("A imagem mate.jpeg.jpeg não foi encontrada. ⚠️")
+    st.warning("A imagem mat.jpeg não foi encontrada. ⚠️")
 
 
 # Título
